@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MapAudit.Services.Services.CarrierService">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\CarrierService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MapAudit.Services.Services.CompanyService">
+    <Position X="2.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\CompanyService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MapAudit.Services.Services.OrderService">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAABAAAAAAAAAAAAEAAIAAAAAg=</HashCode>
+      <FileName>Services\OrderService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="MapAudit.Services.Helpers.FuelConsuptionHelper">
+    <Position X="6.25" Y="1.5" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helpers\FuelConsuptionHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="MapAudit.Services.Services.Interfaces.ICarrierService">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Interfaces\ICarrierService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MapAudit.Services.Services.Interfaces.ICompanyService">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Interfaces\ICompanyService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="MapAudit.Services.Services.Interfaces.IOrderService">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAEAAIAAAAAg=</HashCode>
+      <FileName>Services\Interfaces\IOrderService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

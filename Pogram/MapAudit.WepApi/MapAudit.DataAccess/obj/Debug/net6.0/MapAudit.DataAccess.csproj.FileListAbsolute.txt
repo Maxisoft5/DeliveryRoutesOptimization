@@ -1,0 +1,28 @@
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.DataAccess\bin\Debug\net6.0\MapAudit.DataAccess.deps.json
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.DataAccess\bin\Debug\net6.0\MapAudit.DataAccess.runtimeconfig.json
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.DataAccess\bin\Debug\net6.0\MapAudit.DataAccess.dll
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.DataAccess\bin\Debug\net6.0\MapAudit.DataAccess.pdb
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.DataAccess\obj\Debug\net6.0\MapAudit.DataAccess.csproj.AssemblyReference.cache
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.DataAccess\obj\Debug\net6.0\MapAudit.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.DataAccess\obj\Debug\net6.0\MapAudit.DataAccess.AssemblyInfoInputs.cache
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.DataAccess\obj\Debug\net6.0\MapAudit.DataAccess.AssemblyInfo.cs
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.DataAccess\obj\Debug\net6.0\MapAudit.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.DataAccess\obj\Debug\net6.0\MapAudit.DataAccess.dll
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.DataAccess\obj\Debug\net6.0\refint\MapAudit.DataAccess.dll
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.DataAccess\obj\Debug\net6.0\MapAudit.DataAccess.pdb
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.DataAccess\obj\Debug\net6.0\MapAudit.DataAccess.genruntimeconfig.cache
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.DataAccess\obj\Debug\net6.0\ref\MapAudit.DataAccess.dll
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.DataAccess\bin\Debug\net6.0\MapAudit.DataAccess.deps.json
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.DataAccess\bin\Debug\net6.0\MapAudit.DataAccess.runtimeconfig.json
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.DataAccess\bin\Debug\net6.0\MapAudit.DataAccess.dll
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.DataAccess\bin\Debug\net6.0\MapAudit.DataAccess.pdb
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.DataAccess\obj\Debug\net6.0\MapAudit.DataAccess.csproj.AssemblyReference.cache
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.DataAccess\obj\Debug\net6.0\MapAudit.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.DataAccess\obj\Debug\net6.0\MapAudit.DataAccess.AssemblyInfoInputs.cache
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.DataAccess\obj\Debug\net6.0\MapAudit.DataAccess.AssemblyInfo.cs
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.DataAccess\obj\Debug\net6.0\MapAudit.DataAccess.csproj.CoreCompileInputs.cache
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.DataAccess\obj\Debug\net6.0\MapAudit.DataAccess.dll
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.DataAccess\obj\Debug\net6.0\refint\MapAudit.DataAccess.dll
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.DataAccess\obj\Debug\net6.0\MapAudit.DataAccess.pdb
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.DataAccess\obj\Debug\net6.0\MapAudit.DataAccess.genruntimeconfig.cache
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.DataAccess\obj\Debug\net6.0\ref\MapAudit.DataAccess.dll

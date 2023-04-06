@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MapAudit.WepApi.props" />
+</Project>

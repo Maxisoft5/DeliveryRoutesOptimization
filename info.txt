@@ -1,0 +1,13 @@
+Прізвище: Гринюк
+Ім'я: Максим
+По батькові: Олександрович
+Група: 367
+Тема:«Розробка веб-додатку для оптимізації маршрутів вантажоперевезень з застосуванням генетичних алгоритмів»
+Вид роботи:КРМ
+Місце виконання роботи:302
+Керівник: Яшина О.С.
+Дата захисту: 26.12.2022.
+Додаткова інформація: SQL Server Express або Developer Edition, IDE Visual Studio Code, Visual Studio 2022.  Для запуску локально треба: 1) Вказати строку підключення у Visual Studio 2022 у файлі appsettings.json якщо її нема
+"Server=.;Database=mapAuditDb;Trusted_Connection=True;Integrated security=true;" 2)Запустити міграції в Visual Studio 2022. 
+3) Запустити Web API в Visual Studio 4) Запустили проект GeneticAlgorithmsVisualization в Visual Studio Code який знаходится в папці Visualiation.App через конколь та перед тим поставити nodejs v18 (npm i, ng serve)
+5) Далі в консолі установити пакети через команду npm i, і запустити хост через ng serve.

@@ -1,0 +1,34 @@
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.Services\obj\Debug\net6.0\MapAudit.Services.csproj.AssemblyReference.cache
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.Services\obj\Debug\net6.0\MapAudit.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.Services\obj\Debug\net6.0\MapAudit.Services.AssemblyInfoInputs.cache
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.Services\obj\Debug\net6.0\MapAudit.Services.AssemblyInfo.cs
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.Services\obj\Debug\net6.0\MapAudit.Services.csproj.CoreCompileInputs.cache
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.Services\bin\Debug\net6.0\MapAudit.Services.deps.json
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.Services\bin\Debug\net6.0\MapAudit.Services.dll
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.Services\bin\Debug\net6.0\MapAudit.Services.pdb
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.Services\bin\Debug\net6.0\MapAudit.DataAccess.dll
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.Services\bin\Debug\net6.0\MapAudit.DataAccess.pdb
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.Services\obj\Debug\net6.0\MapAudit.Services.csproj.CopyComplete
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.Services\obj\Debug\net6.0\MapAudit.Services.dll
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.Services\obj\Debug\net6.0\refint\MapAudit.Services.dll
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.Services\obj\Debug\net6.0\MapAudit.Services.pdb
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.Services\obj\Debug\net6.0\ref\MapAudit.Services.dll
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.Services\bin\Debug\net6.0\MapAudit.Services.runtimeconfig.json
+C:\Users\Moksim\source\repos\MapAudit.WepApi\MapAudit.Services\obj\Debug\net6.0\MapAudit.Services.genruntimeconfig.cache
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.Services\bin\Debug\net6.0\MapAudit.Services.deps.json
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.Services\bin\Debug\net6.0\MapAudit.Services.runtimeconfig.json
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.Services\bin\Debug\net6.0\MapAudit.Services.dll
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.Services\bin\Debug\net6.0\MapAudit.Services.pdb
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.Services\bin\Debug\net6.0\MapAudit.DataAccess.dll
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.Services\bin\Debug\net6.0\MapAudit.DataAccess.pdb
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.Services\obj\Debug\net6.0\MapAudit.Services.csproj.AssemblyReference.cache
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.Services\obj\Debug\net6.0\MapAudit.Services.GeneratedMSBuildEditorConfig.editorconfig
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.Services\obj\Debug\net6.0\MapAudit.Services.AssemblyInfoInputs.cache
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.Services\obj\Debug\net6.0\MapAudit.Services.AssemblyInfo.cs
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.Services\obj\Debug\net6.0\MapAudit.Services.csproj.CoreCompileInputs.cache
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.Services\obj\Debug\net6.0\MapAudit.Services.csproj.CopyComplete
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.Services\obj\Debug\net6.0\MapAudit.Services.dll
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.Services\obj\Debug\net6.0\refint\MapAudit.Services.dll
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.Services\obj\Debug\net6.0\MapAudit.Services.pdb
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.Services\obj\Debug\net6.0\MapAudit.Services.genruntimeconfig.cache
+D:\university\6 course\Archive\Pogram\MapAudit.WepApi\MapAudit.Services\obj\Debug\net6.0\ref\MapAudit.Services.dll
