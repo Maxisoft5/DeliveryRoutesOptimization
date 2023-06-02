@@ -1,0 +1,58 @@
+<p-gmap #map (onMapReady)="setMap($event)" 
+             [options]="options" 
+             (onOverlayClick)="handleOverlayClick($event)" 
+             [overlays]="overlays" 
+             [style]="{'width':'1400px','height':'800px',
+'                       margin-top':'100px', 'margin-right':'auto', 'margin-left':'auto', 'position': 'static'}" 
+            (onMapClick)="handleMapClick($event)"></p-gmap>
+<button [disabled]="!selectedOriginPosition || !selectedDestinationPosition" type="button" style="margin-left: 600px; margin-top: 20px; width: 300px;" 
+        pButton label="Save order" icon="pi pi-plus" (click)="saveOrder()"></button>
+
+<p-dialog [closeOnEscape]="false" [closable]="false" #dialog appendTo="map" showEffect="fade" [(visible)]="dialogOriginVisible" header="Origin" 
+        [style]="{width: '500px', 'height': '820px'}">
+    <div class="grid p-fluid" *ngIf="selectedOriginPosition">
+        <div>Latitude: {{this.selectedOriginPosition.lat()}} Longitude: {{this.selectedOriginPosition.lng()}}</div>
+        <div style="padding: 10px 0px 10px 0px;" class="col-2"><label for="company">Company</label><span *ngIf="isControlEmpty('company')" style="color: red;">*</span></div>
+        <p-dropdown #company [options]="companies" [(ngModel)]="selectedCompany" optionLabel="name" optionValue="id"></p-dropdown>
+        <div style="padding: 10px 0px 10px 0px;" class="col-2"><label for="company">Carrier</label><span *ngIf="isControlEmpty('company')" style="color: red;">*</span></div>
+        <p-dropdown #company [options]="carriers" [(ngModel)]="selectedCarrier" optionLabel="info" optionValue="id"></p-dropdown>
+        <div style="padding: 10px 0px 10px 0px;"  class="col-2"><label for="title">Departure Date</label><span *ngIf="isControlEmpty('departureDate')" style="color: red;">*</span></div>
+        <p-calendar [showTime]="true" [showSeconds]="true" inputId="time" appendTo="dialog" [(ngModel)]="departureDate"></p-calendar>
+        <div style="padding: 10px 0px 10px 0px;"  class="col-2"><label for="title">Volume</label><span *ngIf="isControlEmpty('volume')" style="color: red;">*</span></div>
+        <p-inputNumber [(ngModel)]="volume" suffix=" м3"></p-inputNumber>
+        <div style="padding: 10px 0px 10px 0px;"  class="col-2"><label for="title">Weight</label><span *ngIf="isControlEmpty('weight')" style="color: red;">*</span></div>
+        <p-inputNumber [(ngModel)]="weight" suffix=" kg"></p-inputNumber>
+        <div style="padding: 10px 0px 10px 0px;"  class="col-2"><label for="title">Product Name</label><span *ngIf="isControlEmpty('productName')" style="color: red;">*</span></div>
+        <div class="col-10"><input type="text" pInputText id="title" [(ngModel)]="productName"></div>
+        <div *ngIf="originAddress" style="padding: 10px 0px 10px 0px;" class="col-2"><label for="title"><b>Address</b></label></div>
+        <div *ngIf="originAddress" style="padding: 10px 0px 10px 0px;" class="col-2"><label for="title">{{originAddress}}</label></div>
+    </div>
+    <ng-template pTemplate="footer">
+        <div>
+            <button [disabled]="isFormDirty" type="button" pButton label="Add Origin" icon="pi pi-check" (click)="addOriginMarker()"></button>
+            <button type="button" pButton label="Cancel" icon="pi pi-times" (click)="cancelOrigin()"></button>
+        </div>
+    </ng-template>
+</p-dialog>
+
+<p-dialog [closeOnEscape]="false" [closable]="false" #dialog appendTo="map" showEffect="fade" [(visible)]="dialogDestinationVisible" header="Destination" 
+        [style]="{width: '500px', 'height': '750px'}">
+    <div class="grid p-fluid" *ngIf="selectedDestinationPosition">
+        <div *ngIf="productName" style="padding: 10px 0px 10px 0px;" class="col-2"><label for="title"><b>Product Name</b></label></div>
+        <div *ngIf="productName" style="padding: 10px 0px 10px 0px;" class="col-2"><label for="title">{{productName}}</label></div>
+        <div *ngIf="destinationAddress" style="padding: 10px 0px 10px 0px;" class="col-2"><label for="title"><b>Address</b></label></div>
+        <div *ngIf="destinationAddress" style="padding: 10px 0px 10px 0px;" class="col-2"><label for="title">{{destinationAddress}}</label></div>
+        <div *ngIf="distance" style="padding: 10px 0px 10px 0px;" class="col-2"><label for="title"><b>Distance</b></label></div>
+        <div *ngIf="distance" style="padding: 10px 0px 10px 0px;" class="col-2"><label for="title">{{distance}}</label></div>
+        <div *ngIf="duration" style="padding: 10px 0px 10px 0px;" class="col-2"><label for="title"><b>Duration</b></label></div>
+        <div *ngIf="duration" style="padding: 10px 0px 10px 0px;" class="col-2"><label for="title">{{duration}}</label></div>
+        <div *ngIf="arrivalDate" style="padding: 10px 0px 10px 0px;" class="col-2"><label for="title"><b>Arrival Date</b></label></div>
+        <div *ngIf="arrivalDate" style="padding: 10px 0px 10px 0px;" class="col-2"><label for="title">{{arrivalDate}}</label></div>
+    </div>
+    <ng-template pTemplate="footer">
+        <div>
+            <button type="button" pButton label="Add Destination" icon="pi pi-plus" (click)="addDestinationMarker()"></button>
+            <button type="button" pButton label="Cancel" icon="pi pi-times" (click)="cancelDestination()"></button>
+        </div>
+    </ng-template>
+</p-dialog>

@@ -1,0 +1,84 @@
+<body>
+    <div style="display: flex; flex-direction:row;">
+        <p-panel *ngIf="selectedAlgorithm == 'Genetic'" header="Configurations">
+        <div style="display: flex; flex-direction:row;"> 
+            <div style="display: flex; flex-direction:column; margin-right:30px"> 
+                <label>Generations</label>
+                <p-inputNumber [(ngModel)]="generations" [min]="0" [max]="100" [showButtons]="true">
+                </p-inputNumber>
+            </div>
+            <div style="display: flex; flex-direction:column; margin-right:30px"> 
+                <label>Populations</label>
+                <p-inputNumber [(ngModel)]="populations" [min]="0" [max]="100" [showButtons]="true">
+                </p-inputNumber>
+            </div>
+            <div style="display: flex; flex-direction:column; margin-right:30px;"> 
+                <label>Crossovers</label>
+                <p-inputNumber [(ngModel)]="crossoverPercent" [min]="0" [max]="100" [showButtons]="true" suffix="%"></p-inputNumber>
+            </div>
+            <div style="display: flex; flex-direction:column; margin-right:30px;"> 
+                <label>Mutations (by default calculated for each population (1 / populations count))</label>
+                <p-inputNumber [(ngModel)]="mutations" [min]="0" [max]="100" [showButtons]="true" suffix="%"></p-inputNumber>
+            </div>
+        </div>
+        <div style="display: flex; flex-direction:row;"> 
+            <div *ngIf="(companyOrders && companyOrders.length) && populations" style="display: flex; flex-direction:column; margin-top: 20px; margin-right:30px"> 
+                <button [disabled]="isMapLoading" (click)="runGeneticAlgorithmPath()" pButton type="button" label="Run algorithm"></button>
+            </div>
+            <div *ngIf="companyOrders && companyOrders.length" style="display: flex; flex-direction:column; margin-top: 20px; margin-right:30px"> 
+                <button [disabled]="isMapLoading" (click)="getDefaultRoute()" pButton type="button" label="Get default courier route"></button>
+            </div>
+            <div style="display: flex; flex-direction:column; margin-top: 20px; margin-right:30px"> 
+                <button [disabled]="isMapLoading" (click)="clearMarkers()" pButton type="button" label="Clear"></button>
+            </div>
+        </div>
+        <div *ngIf="savedRoutes && savedRoutes.length" style="display: flex; flex-direction:row; margin-top: 40px"> 
+            <div style="margin-top: 10px; margin-right:10px; font-weight: 800" class="col-2"><label for="company">Saved routes:</label></div>
+            <p-dropdown (onChange)="onSaveRouteChange($event)" [options]="savedRoutes" [(ngModel)]="selectedRoute" optionLabel="name" optionValue="deliveryPaths"></p-dropdown>
+        </div>
+        <button [disabled]="isMapLoading" *ngIf="currentRoute" style="margin-top: 10px" (click)="saveRoute()" pButton type="button" label="Save current route"></button>
+        </p-panel>
+        <div>
+        <div style="margin-left: 20px;" class="col-2"><label>Algorithm</label></div>
+            <p-dropdown [style]="{'margin':'20px'}" [options]="algoritms" [(ngModel)]="selectedAlgorithm" optionLabel="name" optionValue="name"></p-dropdown>
+            <div style="margin-left: 20px;" class="col-2"><label for="company">Company</label></div>
+            <p-dropdown #company [style]="{'margin':'20px'}" [options]="compaines" [(ngModel)]="selectedCompany" optionLabel="name" optionValue="name"></p-dropdown>
+            <div style="margin-left: 20px;" class="col-2"><label for="company">Carrier</label></div>
+            <p-dropdown #carrier [style]="{'margin':'20px'}" [options]="carriers" [(ngModel)]="selectedCarrier" optionLabel="info" optionValue="id"></p-dropdown>
+        </div>
+        <div>
+            <button [disabled]="!selectedCompany || !selectedCarrier || isMapLoading" style="margin-top: 50px;" (click)="getOrders()" pButton type="button" label="Get Orders"></button>
+        </div>
+    </div>
+    <div *ngIf="isMapLoading" style="margin-left: 1050px;">
+        <p-progressSpinner></p-progressSpinner>
+        <p style="margin-left: 20px;">Loading...</p>
+    </div>
+    <p-gmap #map (onMapReady)="setMap($event)" [options]="options" (onOverlayClick)="handleOverlayClick($event)" [overlays]="overlays" [style]="{'width':'2100px','height':'1000px',
+    'margin-top':'100px', 'margin-right':'auto', 'margin-left':'auto', 'position': 'static'}" (onMapClick)="handleMapClick($event)"></p-gmap>
+    <div style="display: flex; flex-direction:column; margin-top: 20px; font-size: 20px;"> 
+        <p *ngIf="this.totalDistance">Total distance: {{this.totalDistance}} km</p>
+        <p *ngIf="this.totalTime">Total time: {{this.totalTime.toFixed(2)}} hours ({{(this.totalTime * 60).toFixed(2)}} minutes) </p>
+    </div>
+    <div style="margin-top: 100px;">
+        <p-timeline [value]="events" align="alternate">
+            <ng-template pTemplate="marker" let-event>
+                <span class="custom-marker shadow-2" [style.backgroundColor]="event.color">
+                    <i [ngClass]="event.icon"></i>
+                </span>
+            </ng-template>
+            <ng-template pTemplate="content" let-event>
+                <p-card [header]="event.status" [subheader]="event.date">
+                    <p>{{event.info}}</p>
+                </p-card>
+            </ng-template>
+        </p-timeline>
+    </div>
+  </body>
+
+<p-dialog header="Save path" [(visible)]="display">
+    <input [(ngModel)]="savedPathName" type="text" pInputText [style]="{'margin': '10px'}"/>
+    <p-button label="Save" (click)="confirmSavePath()" [style]="{'margin': '10px'}" ></p-button>
+    <p-button label="Cancel" (click)="this.display = false" [style]="{'margin': '10px'}" ></p-button>
+</p-dialog>
+  

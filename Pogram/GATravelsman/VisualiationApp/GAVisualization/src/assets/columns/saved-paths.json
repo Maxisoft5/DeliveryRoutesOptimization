@@ -1,0 +1,24 @@
+[
+  {
+    "field": "name",
+    "header": "Path Name",
+    "type": "string",
+    "show": true,
+    "filterOptions": {
+      "type": "text",
+      "matchMode": "contains",
+      "matchModeOptions": "string"
+    }
+  },
+  {
+    "field": "path",
+    "header": "Path",
+    "type": "string",
+    "show": true,
+    "filterOptions": {
+      "type": "text",
+      "matchMode": "contains",
+      "matchModeOptions": "string"
+    }
+  }
+]
